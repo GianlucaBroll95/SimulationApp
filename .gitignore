@@ -1,0 +1,7 @@
+# created by virtualenv automatically
+venv
+venv/bin
+.idea/
+prova.py
+prova2.py
+prova3.py
