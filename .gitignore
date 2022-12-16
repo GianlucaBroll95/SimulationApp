@@ -5,3 +5,4 @@ venv/bin
 prova.py
 prova2.py
 prova3.py
+*.DS_Store

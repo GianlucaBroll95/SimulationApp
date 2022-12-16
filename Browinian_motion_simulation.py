@@ -217,10 +217,10 @@ class SimulationApp(ttk.Frame):
         n_sim = int(self.n_sim.get())
         lb = None if self.low_bound.get() == "" else float(self.low_bound.get())
         ub = float(self.upper_bound.get())
-        if lb is not None and lb > ub:
-            raise ValueError("Upper bound is greater than upper bound.")
         final_value = list()
         try:
+            if lb is not None and lb > ub:
+                raise ValueError("Upper bound is greater than upper bound.")
             figure = Figure(dpi=100)
             figure_canvas = FigureCanvasTkAgg(figure, self.chart)
             axis = figure.add_subplot()
